@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+    <style>
+/* 标签选择 全体*/p {
+                    color:rgb(241, 134, 72);
+                }
+/* 类选择 多次,叠加*/
+              .bj{
+                width: 1600px;
+                height:1000px ;
+                background-color: antiquewhite;
+              }
+              .bj2{
+                width: 1600px;
+                height:600px ;
+                background-color:rgb(251, 255, 213)
+              }
+
+/* id选择 一次*/ #zhuce{
+                    color: orange;
+                    }
+
+    </style>
+</head>
+<body class="bj">
+  
+    <h1 align="center" >新用户注册</h1style> 
+
+        <!--表单  -->
+        <form>
+            
+<table width="700" class="bj2">
+
+<tr>
+    <!-- input属性 限制 -->
+   <td>用户名:</td><td><input type="text" name="name" maxlength="8"></td>
+   
+</tr>
+
+<tr>
+    <td>密码:</td><td><input type="password" name="ps" maxlength="18"></td>
+    </tr>
+
+<tr>
+    <!-- label标注 -->
+    <td>性别</td>
+    <td>
+        <!-- 单选 默认选中-->
+     <label for="nan">男</label> <input type="radio" name="sex" id="nan" value="nan" checked="checked">
+
+     <label for="nv">女</label> <input type="radio" name="sex" id="nv" value="nv">
+    </td>
+    </tr>
+
+    <tr>
+        <!-- 多选 -->
+        <td>想关注的领域:</td><td>
+            生活<input type="checkbox" name="hobby" value="sh">
+
+            科技<input type="checkbox" name="hobby" value="kj">
+
+            体育<input type="checkbox" name="hobby" value="ty">
+        </td>
+        </tr>
+
+<!-- 下拉表单 默认-->
+    <tr>
+        <td>出生年份</td>
+        <td>
+            <select>
+                <option>2000以前</option>
+                <option selected="selected">2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2005之后</option>
+
+            </select>
+        </td>
+        </tr>
+
+<tr><br></tr>
+
+<!-- 文本域 -->
+        <tr>
+            <td>个性签名</td>
+            <td>
+                <textarea cols="50 "rows="5" maxlength="50"></textarea>
+            </td>
+        </tr>
+
+<br>
+<!-- <tr> 
+    <td><a href="next1.html">已同意注册用户协议</a>
+        <input type="checkbox" name="xy" value="yhxy" checked="checked"><td>
+
+        </tr>
+-->
+<tr><td><input type="reset" value="重新填写"></td>
+
+<td><input type="submit" value="立即注册" id="zhuce"></td></tr>
+
+
+</table>
+
+</form>
+<a href="Untitled-1.html">已有账户,返回登录</a>
+<p>--------------------------------------------------------------------</p>
+<p>--------------------------------------------------------------------</p>
+
+</body>
+</html>
